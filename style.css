@@ -151,3 +151,12 @@ html { font-size:100%; }
     #primary { width:100%; }
     #secondary { width:100%; margin:0; border:none; }
 }
+@media (min-device-width:800px) {
+    img[data-src-800px] {
+        content: attr(data-src-800px, url);
+    }
+@media (min-device-width:600px)  {
+    img[data-src-800px] {
+      content: attr(data-src-600px, url);
+    }
+}
